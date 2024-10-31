@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #1a1a1a;
+    scroll-behavior: smooth; /* Плавная прокрутка */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff4d4d;
+}
+
+nav {
+    background-color: #333333;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav a {
+    color: #ffcc00;
+    text-decoration: none;
+    padding: 8px 15px;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.2s; /* Плавный переход и анимация */
+}
+
+nav a:hover {
+    color: #ffffff;
+    transform: scale(1.1); /* Увеличение при наведении */
+}
+
+nav a.active {
+    color: #ffffff;
+    border-bottom: 2px solid #ffcc00;
+}
+
+.background-image {
+    background-image: url('background-image.jpg'); /* Замените на ваше изображение фона */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section {
+    opacity: 0; /* Начальная прозрачность */
+    transform: translateY(20px); /* Начальная позиция для анимации */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Переходы для анимации */
+}
+
+section.fade-in {
+    opacity: 1; /* Конечная прозрачность */
+    transform: translateY(0); /* Конечная позиция для анимации */
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #ffcc00;
+}
+
+section p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #888888;
+    margin-top: 20px;
+}
